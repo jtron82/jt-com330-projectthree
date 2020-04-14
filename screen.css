@@ -67,7 +67,14 @@ nav a:hover {
 
 /* Resume Page styling */
 
+#resumepage header {
+  text-align: center;
+}
 
+#resumepage h2 {
+  font-size: 1.5em;
+  margin-top: 1em;
+}
 
 /* Contact Page styling */
 
