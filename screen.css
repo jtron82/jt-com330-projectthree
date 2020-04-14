@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit;}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Begin site styles... */
+
+html {
+  background: black;
+  color: white;
+}
+
+h1 {
+  font-size: 2.5em;
+  padding-top: 1em;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+/* Nav bar styling */
+
+nav {
+  background-color: black;
+  overflow: hidden;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 2em;
+}
+
+nav a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* About Page styling */
+
+#aboutpage p {
+  text-indent: 2em;
+  padding: 1em;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 1.6em;
+}
+
+/* Resume Page styling */
+
+
+
+/* Contact Page styling */
+
+#contactpage ul {
+  margin-top: 1em;
+  text-align: center;
+}
