@@ -53,7 +53,7 @@ nav a:hover {
 
 #selfie {
   max-width: 100%;
-  width: 25em; /* 200px / 16 px = 12.5em */
+  width: 30em; 
   height: auto;
   display: block;
   float: left;
@@ -237,15 +237,9 @@ nav a:hover {
 
   #homepage img {
   	margin-left: 6.5em;
-  	margin-top: -3em;
-  	width: 15em;
   }
 
   /* Resume Page styling */
-  #resumepage h2 {
-  	font-size: 2em;
-  }
-
   #resumepage h3 {
   	font-size: 1.2em;
   }
@@ -296,5 +290,106 @@ nav a:hover {
 
   #experience ul {
   	font-size: 1.1em;
+  }
+}
+
+@media screen and (min-width: 40.625em) { /* 650px / 16px = 40.625‬em */
+  /* Home Page styling */
+  #homepage h1 {
+  	margin-right: 5.5em;
+  }
+
+  #homepage figcaption {
+  	margin-left: 2em;
+  }
+
+  #homepage img {
+  	margin-left: 10em;
+  	margin-top: -3em;
+  	width: 20em;
+  }
+
+  /* About Page styling */
+  #aboutpage p {
+  	font-size: 1.2em;
+  }
+
+  /* Resume Page styling */
+  #resumepage h2 {
+  	font-size: 2.2em;
+  }
+
+  #resumepage h3 {
+  	font-size: 1.4em;
+  }
+
+  #objective p, #education p, #experience p, #skills ul, #resumepage h4 {
+  	font-size: 1.3em;
+  }
+
+  #experience ul {
+  	font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 46.875em) { /* 750px / 16px = 46.875em */
+  /* Home Page styling */
+  #homepage h1 {
+  	font-size: 3em;
+  	margin-right: 2em;
+  }
+
+  #homepage figcaption {
+  	margin-top: 0.5em;
+  }
+
+  #homepage img {
+  	margin-left: 10.5em;
+  	margin-top: -2.5em;
+  	width: 25em;
+  }
+
+  /* Resume Page styling */
+  #resumepage h2 {
+  	font-size: 2.3em;
+  }
+
+  #resumepage h3 {
+  	font-size: 1.5em;
+  }
+
+  #objective p, #education p, #experience p, #skills ul, #resumepage h4 {
+  	font-size: 1.4em;
+  }
+
+  #experience ul {
+  	font-size: 1.3em;
+  }
+}
+
+@media screen and (min-width: 53.125em) { /* 850px / 16px = 53.125em */
+  /* Home Page styling */
+  #homepage figcaption {
+	padding-top: 0.1em;
+  }
+
+  #homepage img {
+	width: 30em;
+	margin-top: -4em;
+	margin-left: 12em;
+  }
+}
+
+@media screen and (min-width: 54.625em) { /* 874px / 16px = 54.625em */
+  /* Home Page styling */
+  #homepage figure {
+  	display: inline-block;
+  }
+}
+
+@media screen and (min-width: 56.25em) { /* 900px / 16px = 56.25em */
+  /* Home Page styling */
+  #homepage img {
+	margin-left: 13.5em;
   }
 }
