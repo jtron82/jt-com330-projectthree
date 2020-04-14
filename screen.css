@@ -22,6 +22,11 @@ h1 {
   font-family: 'Fira Sans', sans-serif;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
 /* Nav bar styling */
 
 nav {
@@ -48,12 +53,31 @@ nav a:hover {
 
 #selfie {
   max-width: 100%;
-  width: 12.5em; /* 200px / 16 px = 12.5em */
+  width: 25em; /* 200px / 16 px = 12.5em */
   height: auto;
   display: block;
+  float: left;
+  padding-top: 7em;
+}
+
+#homepage h1 {
+  float: right;
+}
+
+#homepage header {
   margin-left: auto;
   margin-right: auto;
-  padding-top: 1.5em;
+  max-width: 900px;
+}
+
+#homepage figcaption {
+  font-size: 3em;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 1em;
 }
 
 /* About Page styling */
@@ -83,7 +107,7 @@ nav a:hover {
 #resumepage h2 {
   font-size: 2em;
   margin-top: 1em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.3em;
 }
 
 #resumepage h3 {
@@ -95,19 +119,9 @@ nav a:hover {
   line-height: 1.1em;
 }
 
-#experience li {
-  text-indent: 1.5em;
+#experience li, h4 {
   margin-top: 0.2em;
   margin-bottom: 0.2em;
-}
-
-#experience h4 {
-  margin-top: 0.2em;
-  margin-bottom: 0.2em;
-}
-
-#skills ul {
-  text-indent: 1.5em;
 }
 
 #skills li {
