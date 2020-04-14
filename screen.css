@@ -44,6 +44,18 @@ nav a:hover {
   color: black;
 }
 
+/* Home Page styling */
+
+#selfie {
+  max-width: 100%;
+  width: 12.5em; /* 200px / 16 px = 12.5em */
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1.5em;
+}
+
 /* About Page styling */
 
 #aboutpage p {
@@ -62,4 +74,5 @@ nav a:hover {
 #contactpage ul {
   margin-top: 1em;
   text-align: center;
+  font-size: 1.5em;
 }
