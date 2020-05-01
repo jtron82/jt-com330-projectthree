@@ -50,26 +50,21 @@ nav a:hover {
 nav label {
   display: block;
   cursor: pointer;
-  padding: 10px 0 0 50px;
+  padding: 10px 17px;
   font-size: 20px;
   font-weight: bold;
-  color: black;
-  background: white url("../images/menu.png") no-repeat left center/17%;
-}
-
-input#navigation {
-  display: none;
+  color: white;
 }
 
 .nav-items {
   max-height: 0;
 }
 
-input:checked ~ label {
-  background: white url("../images/xmark.png") no-repeat left center/17%;
+#navigation {
+  display: none;
 }
 
-input:checked ~ .nav-items {
+#navigation:checked ~ .nav-items {
   max-height: 100%;
 }
 
@@ -77,11 +72,10 @@ input:checked ~ .nav-items {
 
 #selfie {
   max-width: 100%;
-  width: 30em; 
   height: auto;
   display: block;
-  float: left;
-  padding-top: 7em;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 
 #homepage h1 {
@@ -97,8 +91,7 @@ input:checked ~ .nav-items {
 #homepage figcaption {
   font-size: 1.5em;
   font-weight: bold;
-  display: inline-block;
-  vertical-align: middle;
+  text-align: center;
   padding-bottom: 1em;
 }
 
@@ -111,6 +104,7 @@ input:checked ~ .nav-items {
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
+  font-size: 1em;
 }
 
 /* Resume Page styling */
@@ -127,28 +121,47 @@ input:checked ~ .nav-items {
   text-align: center;
 }
 
+#resumepage header ul {
+  margin-top: 1em;
+  font-size: 1.2em;
+  line-height: 1em;
+}
+
+#resumepage ul #name {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
 #resumepage h2 {
-  font-size: 2em;
-  margin-top: 0.5em;
-  margin-bottom: 0.3em;
+  font-size: 1.7em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 
 #resumepage h3 {
-  font-size: 1.3em;
+  font-size: 1.2em;
+  line-height: 1.3em;
 }
 
 #resumepage p {
-  font-size: 1.1em;
-  line-height: 1.1em;
+  font-size: 1em;
+  line-height: 1.3em;
 }
 
-#experience li, h4 {
-  margin-top: 0.2em;
-  margin-bottom: 0.2em;
+#experience li {
+  line-height: 1.3em;
+  font-size: 0.85em;
+  list-style-type: circle;
+  padding: 5px;
+}
+
+#experience h4 {
+  line-height: 1.3em;
 }
 
 #skills li {
-  font-size: 1.1em;
+  font-size: 1em;
+  line-height: 1.3em;
 }
 
 #skills {
@@ -157,10 +170,21 @@ input:checked ~ .nav-items {
 
 /* Contact Page styling */
 
-#contactpage ul {
+#contactpage #contacts {
   margin-top: 1em;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.2em;
+  padding: 5px;
+}
+
+#contactpage .href-url:link {
+  color: white;
+  text-decoration: none;
+}
+
+#contactpage .href-url:visited {
+  color: white;
+  text-decoration: none;
 }
 
 /* Media queries */
