@@ -9,8 +9,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* Begin site styles... */
 
 html {
-  background: black;
-  color: white;
+  background: #000000;
+  color: #FFFAFA;
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -29,22 +29,22 @@ footer {
 /* Nav bar styling */
 
 nav {
-  background-color: black;
+  background-color: #000000;
   overflow: hidden;
   line-height: 2em;
 }
 
 nav a {
-  color: white;
+  color: #FFFAFA;
   text-align: center;
-  padding: 6px 16px;
+  padding: 3px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
 nav a:hover {
-  background-color: white;
-  color: black;
+  background-color: #FFFAFA;
+  color: #000000;
 }
 
 nav label {
@@ -53,11 +53,16 @@ nav label {
   padding: 10px 17px;
   font-size: 20px;
   font-weight: bold;
-  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
 }
 
 .nav-items {
   max-height: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
 }
 
 #navigation {
@@ -95,6 +100,12 @@ nav label {
   padding-bottom: 1em;
 }
 
+#homepage img {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* About Page styling */
 
 #aboutpage p {
@@ -104,7 +115,7 @@ nav label {
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 1em;
+  font-size: 0.85em;
 }
 
 /* Resume Page styling */
@@ -129,7 +140,7 @@ nav label {
 
 #resumepage ul #name {
   font-size: 1.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.25em;
 }
 
 #resumepage h2 {
@@ -143,7 +154,7 @@ nav label {
   line-height: 1.3em;
 }
 
-#resumepage p {
+#resumepage p, #skills li {
   font-size: 1em;
   line-height: 1.3em;
 }
@@ -153,14 +164,10 @@ nav label {
   font-size: 0.85em;
   list-style-type: circle;
   padding: 5px;
+  margin-left: 20px;
 }
 
 #experience h4 {
-  line-height: 1.3em;
-}
-
-#skills li {
-  font-size: 1em;
   line-height: 1.3em;
 }
 
@@ -178,13 +185,107 @@ nav label {
 }
 
 #contactpage .href-url:link {
-  color: white;
+  color: #FFFAFA;
   text-decoration: none;
 }
 
 #contactpage .href-url:visited {
-  color: white;
+  color: #FFFAFA;
   text-decoration: none;
 }
 
 /* Media queries */
+
+@media screen and (min-width: 22.125em) { /* 450px / 16px = 21.875em */
+  #homepage figcaption {
+    font-size: 2em;
+  }
+
+  #homepage label, #aboutpage label, #resumepage label, #contactpage label {
+    font-size: 1.5em;
+  }
+
+  #homepage img {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #homepage a, #aboutpage a, #resumepage a, #contactpage a {
+    font-size: 1.2em;
+  }
+
+  #resumepage #experience li, #aboutpage p {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 34.375em) { /* 550px / 16px = 34.375em */
+  #homepage img {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #homepage h1, #aboutpage h1, #resumepage h1, #contactpage h1 {
+    font-size: 2.75em;
+  }
+
+  #aboutpage p {
+    font-size: 1.1em;
+  }
+
+  #resumepage p, #skills li {
+    font-size: 1.1em;
+  }
+
+  #resumepage h3 {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (min-width: 40.625em) { /* 650px / 16px = 40.625‬em */
+  #homepage figcaption {
+    font-size: 2.5em;
+  }
+
+  #homepage label, #aboutpage label, #resumepage label, #contactpage label {
+    font-size: 2em;
+  }
+
+  #homepage h1, #aboutpage h1, #resumepage h1, #contactpage h1 {
+    font-size: 3em;
+  }
+
+  #homepage a, #aboutpage a, #resumepage a, #contactpage a {
+    font-size: 1.5em;
+  }
+
+  #aboutpage p {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 46.875em) { /* 750px / 16px = 46.875em */
+  #resumepage header ul {
+    font-size: 1.4em;
+  }
+
+  #resumepage h2 {
+    font-size: 2em;
+  }
+
+  #resumepage h3 {
+    font-size: 1.5em;
+    line-height: 1.3em;
+  }
+
+  #resumepage p, #skills li {
+    font-size: 1.3em;
+    line-height: 1.3em;
+  }
+
+  #resumepage #experience li, #resumepage h4 {
+    font-size: 1.1em;
+  }
+}
